@@ -7,14 +7,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
-    --primary-color: #A19E9E;
+    /* --primary-color: #A19E9E; */
+    --primary-color: #98aa9b;
     --secondary-color: #ffffff;
     --secondary-bg: #F8F8F8;
-    --para-color: ;
-    --heading-color: #00BFFF;
+    --smallheadings-color: #f98100;
+    --heading-color: #170e80;
     --btn-color: #89CFF0;
     --btn-hover-color: #98FB98;
-    /* --btn-color-bg: ; */
     --secondary-text: #D3D3D3;
     --font-family: "Roboto", sans-serif;
     --primary-para: #808080;
@@ -34,7 +34,7 @@ header {
         justify-content: center;
         text-align: right;
         align-items: center;
-        background: #A19E9E;
+        background: var(--secondary-bg);
 
 
         ul {
@@ -64,7 +64,8 @@ nav .navbar-brand {
     margin: auto;
     font-size: 20px;
     font-weight: 600;
-    line-height: 20px;
+    line-height: 25px;
+    color: var(--smallheadings-color);
 }
 
 header .row {
@@ -96,6 +97,23 @@ header #header_img img {
 
 #Supporters h1 {
     color: var(--heading-color);
+    font-weight: 600;
+    line-height: 55px;
+    font-size: 45px;
+}
+
+#Supporters h6 {
+    line-height: 35px;
+    font-size: 20px;
+    color: var(--smallheadings-color);
+
+}
+
+#Supporters .card-text {
+    color: rgb(89, 56, 6);
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 500;
 }
 
 
@@ -106,6 +124,7 @@ header #header_img img {
     object-fit: cover;
     background-position: center;
     background-repeat: no-repeat;
+    border: 3px solid var(--hover-icons);
 }
 
 #Supporters .container .card-group {
@@ -125,13 +144,15 @@ header #header_img img {
 }
 
 #Gallery .btn {
-    height: 45px;
-    width: 120px;
-    background-color: var(--btn-color);
+
+    height: 55px;
+    width: 135px;
     color: black;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
     font-family: var(--font-family);
+    border: 3px solid black;
+
 }
 
 #Gallery .btn:hover {
@@ -154,6 +175,10 @@ header #header_img img {
 #Sponsored img {
     height: 140px;
     width: 140px;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 3px solid var(--hover-icons);
 }
 
 #Sponsored .card-img-bottom {
@@ -168,6 +193,9 @@ header #header_img img {
 
 #Sponsored h1 {
     color: var(--heading-color);
+    font-weight: 600;
+    line-height: 55px;
+    font-size: 45px;
 }
 
 
@@ -194,7 +222,25 @@ header #header_img img {
 #Sponsored h1 {
     position: relative;
     top: -140px;
+    font-weight: 600;
+    line-height: 55px;
+    font-size: 45px;
 }
+
+#Sponsored h6 {
+    line-height: 35px;
+    font-size: 20px;
+    color: var(--smallheadings-color);
+
+}
+
+#Sponsored .card-text {
+    color: rgb(89, 56, 6);
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 500;
+}
+
 
 /* <!-- Gallery --> */
 
@@ -236,8 +282,10 @@ header #header_img img {
 
 }
 
-#footer {
-    background: var(--primary-color);
+#footer #footer_icons .icon_content {
+    font-weight: 400;
+    font-family: var(--font-family);
+    color: #aaa;
 }
 
 #footer #footer_icons .border_footer {
@@ -246,6 +294,13 @@ header #header_img img {
     justify-content: space-between;
     width: 200px;
     font-size: 18px;
+
+}
+
+#footer .navbar-brand {
+    color: var(--smallheadings-color);
+    font-size: 20px;
+    font-weight: 500;
 }
 
 #footer .contact {
@@ -259,8 +314,37 @@ header #header_img img {
 
 #footer .contact h6 {
     line-height: 30px;
+
 }
 
+#footer .contact h6 span {
+    color: var(--smallheadings-color);
+    font-size: 25px;
+}
+
+#footer {
+    margin-top: 30px;
+    background-color: #808080;
+    color: var(--secondary-color);
+}
+
+#footer i:hover {
+    color: var(--smallheadings-color);
+    cursor: pointer;
+
+}
+
+#footer i {
+    font-size: 19px;
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
 
